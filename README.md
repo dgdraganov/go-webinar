@@ -6,25 +6,32 @@ Go examples to to support the webinar presentation.
 
 Amatic SC font
 
-## 01.start_up 
+## Hello world
 
-Empty project to demostrate how to create a new go workspace - `go mod init <proj_name>`
+Empty project to demostrate how to create a new go workspace - 
+`go mod init <proj_name>`
+`touch main.go`
+`go run .`
 
-## 05.keywords
+## Keywords
 
 Go's simplicity in terms of keywords. 
 
-## 20.syntax_specifics
+## Syntax
 
-declared and not used - error
+keywords
+no need for semi-columns 
+no need for brackets in loops and conditionals
+multiple return values
 the _ variable
+declared and not used - error
 imported and not used - error 
-no need of semi-columns 
-no need of brackets in loops and conditionals
 
+## Enums and iota
 
+example
 
-## 21.go_structs
+## Structs
 
 Nested structs
 Receiver functions
