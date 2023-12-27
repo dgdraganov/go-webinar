@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	var number int = 70
@@ -23,4 +25,18 @@ func main() {
 	}
 
 	// unused := 55 // ERROR
+
+	cond, err := IsAdult(15)
+	if err != nil {
+		fmt.Printf("check if adult: %s\n", err)
+	}
+
+	fmt.Printf("is adult: %t\n", cond)
+}
+
+func IsAdult(age int) (bool, error) {
+	if age < 0 {
+		return false, fmt.Errorf("age cannot be less than 0, age: %d", age)
+	}
+	return age >= 18, nil
 }
