@@ -37,9 +37,11 @@ Nested structs
 Receiver functions
 
 
-## 07.go_standard_lib
+## Go standard library
 
 Go's standard library - everything you need! 
+
+fmt, encoding, testing, net/http, sync, crypro, nath
 
 Other languages have established, “default” frameworks:
 Java has Spring, 
@@ -55,13 +57,14 @@ Best Go framework is No framework:
 https://threedots.tech/post/best-go-framework/
 
 
-## 02.defer
+## Defer
 
-Show how `defer` statement works. Show use case with sql drivers - `_ "github.com/go-sql-driver/mysql"`.
+Show how `defer` statement works. 
 
-## 03.init
+## Init
 
 Show how `init()` func works. Example with `database/sql` package
+ `_ "github.com/go-sql-driver/mysql"`.
 
 ## 04.goroutines
 
@@ -72,7 +75,7 @@ https://pkolaczk.github.io/memory-consumption-of-async/
 
 ## 10.channels
 
-What are channels. How cool are they. Select statement.
+What are channels. How cool are they? Select statement.
 
 ## 06.testing
 

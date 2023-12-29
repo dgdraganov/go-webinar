@@ -2,6 +2,14 @@ package main
 
 import "fmt"
 
+type Status string
+
+const (
+	Success    Status = "success"
+	Failed     Status = "failed"
+	Processing Status = "processing"
+)
+
 type Weekday int
 
 const (
@@ -14,18 +22,10 @@ const (
 	Sunday                   // 6
 )
 
-type Status string
-
-const (
-	Success    Status = "success"
-	Failed     Status = "failed"
-	Processing Status = "processing"
-)
-
 func main() {
-	var day Weekday = Friday
-	fmt.Println(day)
-
 	var status Status = Failed
 	fmt.Println(status)
+
+	var day Weekday = Friday
+	fmt.Println(day)
 }
